@@ -1,34 +1,32 @@
 {
   "compilerOptions": {
-    "moduleResolution": "node",
-    "experimentalDecorators": true,
-    "jsx": "react",
-    "sourceMap": true,
-    "esModuleInterop": true,
-    "importHelpers": true,
-    "allowSyntheticDefaultImports": true,
-    "allowJs": true,
-    "baseUrl": ".",
-    "module": "esnext",
-    "target": "esnext",
+    "target": "es5",
     "lib": [
-      "esnext",
-      "dom"
+      "dom",
+      "dom.iterable",
+      "esnext"
     ],
-    "rootDirs": [
-      "/src",
-      "/test",
-      "/mock",
-      "./typings"
-    ],
+    "baseUrl": ".",
     "paths": {
-      "@/*": ["./src/*"]
-    }
+      "@/*": [
+        "src/*"
+      ]
+    },
+    "allowJs": true,
+    "skipLibCheck": true,
+    "esModuleInterop": true,
+    "noImplicitAny": true,
+    "allowSyntheticDefaultImports": true,
+    "strict": true,
+    "forceConsistentCasingInFileNames": true,
+    "module": "esnext",
+    "moduleResolution": "node",
+    "resolveJsonModule": true,
+    "isolatedModules": true,
+    "noEmit": true,
+    "jsx": "preserve"
   },
   "include": [
-    "./src"
-  ],
-  "exclude": [
-    "node_modules"
+    "src"
   ]
 }
